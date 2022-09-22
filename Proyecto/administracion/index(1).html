@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Mustela Lutreola</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="#" alt="Social Mustela Lutreola" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+    </ul>
+
+   
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="imgs/SML2.png" alt="Logo Social" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Social Mustela Lutreola</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://adminlte.io/themes/v3/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Jesús Camacho</a>
+        </div>
+      </div>
+
+      
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+      
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Administrador
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li onclick="gesUsuario()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestion de Usuarios</p>
+                </a>
+              </li>
+              <li onclick="comentarios()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestionar Comentarios</p>
+                </a>
+              </li>
+             <li onclick="perfil()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis datos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          ////////
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Usuario 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+
+
+            <ul class="nav nav-treeview">
+              <li onclick="misFotos()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis Fotos</p>
+                </a>
+              </li>
+              <li onclick="misComentarios()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis Comentarios</p>
+                </a>
+              </li>
+             <li onclick="chatPrivado()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chat Privado</p>
+                </a>
+              </li>
+              <li onclick="perfil()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis Datos</p>
+                </a>
+              </li>
+            </ul>
+
+/*/***///////
+
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                SuperAdmin
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li onclick="gesUsuario()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestion de Usuarios</p>
+                </a>
+              </li>
+              <li onclick="gesContenido()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestion contenidos</p>
+                </a>
+              </li>
+              <li onclick="gesMensajes()" class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestion de Mensajes </p>
+                </a>
+              </li>
+             <li onclick="perfil()"  class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis datos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+       
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-12 connectedSortable">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title" id="titulo" name="titulo">
+                  RED SOCIAL MUSTELA LUTREOLA
+                </h3>
+                
+              </div><!-- /.card-header -->
+              <div class="card-body" id="contenido" name="contenido">
+                
+                AquÍ publicaremos información
+
+              </div><!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+            <!-- /.card -->
+          </section>
+       
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2021-2022 <a href="#">Admin.com</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="https://adminlte.io/themes/v3/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="https://adminlte.io/themes/v3/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="https://adminlte.io/themes/v3/plugins/moment/moment.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="https://adminlte.io/themes/v3/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://adminlte.io/themes/v3/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://adminlte.io/themes/v3/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="https://adminlte.io/themes/v3/dist/js/pages/dashboard.js"></script>
+
+<script>
+
+  function gesUsuario(){
+    $("#titulo").html("Gestion de Usuarios");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Nombres</th>"
+                +"<th>Apellidos</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Roger</td>"
+                +"<td>Hernandez</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>2</td>"
+                +"<td>Anna</td>"
+                +"<td>Carmel</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+/////////
+function misFotos(){
+    $("#titulo").html("Mis Fotos");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>Album</th>"
+                +"<th>Fecha</th>"
+                +"<th>No de Elementos</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>Navidad</td>"
+                +"<td>25/12/2021</td>"
+                +"<td>35 Elementos</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>Pascuas</td>"
+                +"<td>15/04/2022</td>"
+                +"<td>105 Elementos</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+////////////////////////////////
+function comentarios(){
+
+  $("#titulo").html("Gestion de Comentarios");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Comentarios</th>"
+                +"<th>Usuario</th>"
+                +"<th>Fecha</th>"
+                +"<th>Hora</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Esta excelente la foto</td>"
+                +"<td>Anna</td>"
+                +"<td>17/09/2022</td>"
+                +"<td>11:47:20</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                +"</td>"
+              +"</tr>"
+             
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+}
+
+/////////////////
+function perfil(){
+  $("#titulo").html("Mis Datos");
+
+  var info="ROGER STEVENS HERNANDEZ "
+          +"<br> IDentificacion: 456789"
+          +"<br> Telefono: 876543"
+          +"<br> Direccion: jhdjhsd 342312 erw23231";
+
+$("#contenido").html(info);
+
+
+}
+//////////
+
+function misComentarios(){
+    $("#titulo").html("Mis Comentarios");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>Fecha</th>"
+                +"<th>Comentario</th>"
+                +"<th>Usuario</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>15/05/2020</td>"
+                +"<td>¡Qué lindo!</td>"
+                +"<td>Juan Gomez</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>27/07/2021</td>"
+                +"<td>Estuvo estupendo</td>"
+                +"<td>Carmel Florez</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+  //////
+  function chatPrivado(){
+    $("#titulo").html("Chat Privado");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>Usuario</th>"
+                +"<th>fecha</th>"
+                +"<th>hora</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>Fito Páez</td>"
+                +"<td>12/09/2021</td>"
+                +"<td>10:22:39</td>"
+                +"<td>"
+                  +"<button class='btn btn-info'>Ver Chat</button>"
+                  +"<button class='btn btn-info'>Vaciar Chat</button>"
+                  +"<button class='btn btn-danger'>Eliminar Chat</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>Liliana Suárez</td>"
+                +"<td>28/082022</td>"
+                +"<td>23:45:01</td>"
+                +"<td>"
+                  +"<button class='btn btn-info'>Ver Chat</button>"
+                  +"<button class='btn btn-info'>Vaciar Chat</button>"
+                  +"<button class='btn btn-danger'>Eliminar Chat</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+  ////////
+  function gesContenido(){
+    $("#titulo").html("Gestion de Contenidos");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Usuario</th>"
+                +"<th>Espacio Usado</th>"
+                +"<th>No de Reportes</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Hernán Díaz</td>"
+                +"<td>12Gb</td>"
+                +"<td>3</td>"
+                +"<td>"
+                  +"<button class='btn btn-info'>Bloquear</button>"
+                  +"<button class='btn btn-danger'>Aviso</button>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>2</td>"
+                +"<td>Rafael Bejarano</td>"
+                +"<td>1Gb</td>"
+                +"<td>0</td>"
+                +"<td>"
+                  +"<button class='btn btn-info'>Bloquear</button>"
+                  +"<button class='btn btn-danger'>Aviso</button>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+  ///////
+  function gesMensajes(){
+    $("#titulo").html("Gestión de Mensajes");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Usuario</th>"
+                +"<th>Fecha</th>"
+                +"<th>Hora</th>"
+                +"<th>Mensajes</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Ana Rios</td>"
+                +"<td>15/05/2020</td>"
+                +"<td>23:05:59</td>"
+                +"<td>58</td>"
+                +"<td>"
+                  +"<button class='btn btn-info'>Aviso</button>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>2</td>"
+                +"<td>Camilo Niño</td>"
+                +"<td>1/05/2021</td>"
+                +"<td>04:23:06</td>"
+                +"<td>108</td>"
+                +"<td>"
+                  +"<button class='btn btn-info'>Aviso</button>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+
+</script>
+
+
+</body>
+</html>
